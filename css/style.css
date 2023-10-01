@@ -1,0 +1,86 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM 
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights :
+Default : 400
+
+- Line heights : 
+Default : 1.2
+
+- Fonts Family :
+font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+1 | Oswald Bold - font-size: 18px;
+2 | Oswald Bold - font-size: 90px;
+3 | Montserrat Regular - font-size: 24px;
+4 | Oswald Bold - font-size: 24px;
+5 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
+6 | Oswald Bold - font-size: 36px; Monserrat Regular - font-size: 21px
+7 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
+8 | Oswald Bold - font-size: 24px;
+9 | Oswald Bold - font-size: 21px; Monserrat Regular - font-size: 16px
+
+ --- 02 COLORS SYSTEM (https://paletton.com/)
+
+--color-primary: #e67e22;
+--color-tints : #FFB878
+--color-shades : #F49C4D
+--color-accents : #B95E0D
+--color-dark : #924500
+--color-grey : #555;
+--color-white: #fff;
+
+
+--- 03 IMAGES
+
+--- 04 ICONS
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --color-primary: #e67e22;
+  --color-tints : #FFB878
+  --color-shades : #F49C4D
+  --color-accents : #B95E0D
+  --color-dark : #924500
+  --color-grey : #555;
+  --color-white: #fff;
+}
+/* GLOBAL RESET  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-grey);
+}
+
+.hello {
+  text-align: center;
+  margin-top: 64px;
+}
