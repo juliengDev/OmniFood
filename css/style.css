@@ -10,27 +10,19 @@ Default : 400
 - Line heights : 
 Default : 1.2
 
+
 - Fonts Family :
-font-family: 'Oswald', sans-serif;
-font-family: 'Montserrat', sans-serif;
+(copy the html link before the CSS file !)
+font-family: 'Rubik', sans-serif;
 
-1 | Oswald Bold - font-size: 18px;
-2 | Oswald Bold - font-size: 90px;
-3 | Montserrat Regular - font-size: 24px;
-4 | Oswald Bold - font-size: 24px;
-5 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
-6 | Oswald Bold - font-size: 36px; Monserrat Regular - font-size: 21px
-7 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
-8 | Oswald Bold - font-size: 24px;
-9 | Oswald Bold - font-size: 21px; Monserrat Regular - font-size: 16px
+1 | Inter 1.6rem
 
- --- 02 COLORS SYSTEM (https://paletton.com/)
+ --- 02 COLORS SYSTEM (https://maketintsandshades.com/)
 
 --color-primary: #e67e22;
---color-tints : #FFB878
---color-shades : #F49C4D
---color-accents : #B95E0D
---color-dark : #924500
+--color-tints : #e67e22 #cf711f #b8651b #a15818 #8a4c14 #733f11 #5c320e #45260a #2e1907 #170d03 #000000
+--color-shades : #e67e22 #e98b38 #eb984e #eea564 #f0b27a #f3bf91 #f5cba7 #f8d8bd #fae5d3 #fdf2e9 #ffffff
+
 --color-grey : #555;
 --color-white: #fff;
 
@@ -50,12 +42,17 @@ SPACING SYSTEM (px)
 */
 
 :root {
+  /* font-size: 10px;   equal to 1rem */
+  /* pourcentage of user's browser font-size setting  */
+  font-size: 62.5%;
+
+  /* Colors */
   --color-primary: #e67e22;
-  --color-tints : #FFB878
-  --color-shades : #F49C4D
-  --color-accents : #B95E0D
-  --color-dark : #924500
-  --color-grey : #555;
+  --color-tints-1: #fdf2e9;
+  --color-tints-2: #cf711f;
+  /* Grey */
+  --color-grey: #555;
+  --color-lgrey: #333;
   --color-white: #fff;
 }
 /* GLOBAL RESET  */
@@ -74,13 +71,101 @@ a:active {
   color: inherit;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   color: var(--color-grey);
 }
-
-.hello {
-  text-align: center;
-  margin-top: 64px;
+/*HYPER CLASS*/
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.section-hero {
+  background-color: var(--color-tints-1);
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  /*Put transition on original "state" */
+  transition: background-color 400ms;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-tints-2);
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: var(--color-white);
+  color: var(--color-grey);
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--color-tints-1);
+  /* border: 3px solid #fff; */
+  /*Trick to add border inside*/
+  box-shadow: inset 0 0 0 3px var(--color-white);
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: var(--color-lgrey);
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid var(--color-tints-1);
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: var(--color-tints-2);
+  font-weight: 700;
 }
