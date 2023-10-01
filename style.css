@@ -1,0 +1,61 @@
+/* Colors 
+
+--color-dark1: #2e323f;
+--color-dark2: #3b4050;
+--color-dark3: #6f737f;
+--color-white: #fff;
+--color-web1: #a59678; 
+*/
+
+/* Fonts 
+font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+/* 
+
+Fonts
+1 | Oswald Bold - font-size: 18px;
+2 | Oswald Bold - font-size: 90px;
+3 | Montserrat Regular - font-size: 24px;
+4 | Oswald Bold - font-size: 24px;
+5 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
+6 | Oswald Bold - font-size: 36px; Monserrat Regular - font-size: 21px
+7 | Oswald Bold - font-size: 30px; Monserrat Regular - font-size: 18px
+8 | Oswald Bold - font-size: 24px;
+9 | Oswald Bold - font-size: 21px; Monserrat Regular - font-size: 16px
+
+*/
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --color-dark1: #2e323f;
+  --color-dark2: #3b4050;
+  --color-dark3: #6f737f;
+  --color-white: #fff;
+  --color-lgrey: #e9ecef;
+  --color-web1: #a59678;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5;
+}
