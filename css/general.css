@@ -39,6 +39,7 @@ Bold : 700
 --color-white: #fff;
 
 
+
 --- 03 IMAGES
 
 --- 04 ICONS
@@ -69,6 +70,7 @@ SPACING SYSTEM (px)
   --color-grey: #555;
   --color-grey-1: #343a40;
   --color-lgrey: #333;
+  --color-grey-lightest : #6f6f6f
   --color-white: #fff;
   /* Shadows */
   --color-sh-1: #2e1907;
