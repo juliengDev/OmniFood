@@ -47,6 +47,7 @@ Bold : 700
 
 --- 06 BORDER-RADIUS
 Default : 9px
+Medium : 11px
 
 --- 07 WHITESPACE
 
@@ -163,7 +164,8 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   /*Put transition on original "state" */
-  transition: background-color 400ms;
+  /* transition: background-color 400ms; */
+  transition: all 400ms;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -186,7 +188,30 @@ body {
   /*Trick to add border inside*/
   box-shadow: inset 0 0 0 3px var(--color-white);
 }
-
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: var(--color-primary);
+  /* currenColor will takes the color of the element color propery  */
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 300ms;
+}
+.link:hover,
+.link:active {
+  color: var(--color-tints-2);
+  border-bottom: 1px solid transparent;
+}
+/* HELPER/SETTING CLASSES */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
 }
