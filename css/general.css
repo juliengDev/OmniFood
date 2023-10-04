@@ -66,11 +66,12 @@ SPACING SYSTEM (px)
   --color-tints-1: #fdf2e9;
   --color-tints-2: #cf711f;
   --color-tints-3: #fae5d3;
+  --color-yellow: #ffd43b;
   /* Grey */
   --color-grey: #555;
   --color-grey-1: #343a40;
   --color-lgrey: #333;
-  --color-grey-lightest : #6f6f6f
+  --color-grey-lightest: #6f6f6f;
   --color-white: #fff;
   /* Shadows */
   --color-sh-1: #2e1907;
@@ -111,6 +112,10 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -203,6 +208,27 @@ body {
 .link:active {
   color: var(--color-tints-2);
   border-bottom: 1px solid transparent;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
 }
 /* HELPER/SETTING CLASSES */
 .margin-right-sm {
