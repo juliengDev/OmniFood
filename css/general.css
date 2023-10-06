@@ -71,10 +71,12 @@ SPACING SYSTEM (px)
   --color-tints-4: #eb984e;
   --color-yellow: #ffd43b;
   /* Grey */
+  --color-grey-dark: #888;
   --color-grey: #555;
   --color-grey-1: #343a40;
   --color-lgrey: #333;
   --color-grey-lightest: #6f6f6f;
+  --color-grey-lightest-2: #76767676;
   --color-white: #fff;
   /* Shadows */
   --color-sh-1: #2e1907;
@@ -128,6 +130,9 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
